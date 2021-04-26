@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Warning Message */
+.warning-message {
+    position: absolute;
+    top: 2rem;;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.warning-fail {
+    width: 50vw;
+    border: 1px solid #333;
+    color: red;
+    padding: 1rem;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    box-shadow: 1px 2px 5px #333;
+}
+
+.warning-delete {
+    width: 50vw;
+    border: 1px solid #333;
+    padding: 1rem;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    color: orange;
+    box-shadow: 1px 2px 5px #333;
+}
+
+.warning-success {
+    width: 50vw;
+    border: 1px solid #333;
+    padding: 1rem;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    color: green;
+    box-shadow: 1px 2px 5px #333;
+}
+
+/* Container */
+.container {
+    position: absolute;
+    width: 80vw;
+    height: 50vh;
+    border: 2px solid #333;
+    transform: translate(13%, 50%);
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header {
+    position: absolute;
+}
+
+form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form .input-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form .input-field label {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+form .input-field > input {
+    width: 200px;
+    height: 35px;
+    padding: 0 5px;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 10px 30px;
+    cursor: pointer;
+    background:cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+}
+
+table {
+    justify-self: flex-start;
+    width: 50vw;
+    border-left: 2px solid #333;
+    border-bottom: none;
+    display: flex;
+    padding: 0 0 1rem 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+table thead {
+    width: 100%;
+    border-bottom: 2px solid #333;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+table thead th {
+    border: 2px solid #333;
+    width: 50vw;
+}
+
+table tbody {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+}
+
+table tbody tr {
+    border-bottom: 2px solid #888;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .8rem 0;
+}
+
+table tbody td button {
+    padding: 5px 15px;
+    cursor: pointer;
+    background:rgb(245, 63, 63);
+    border: none;
+    color: #eee;
+}
+
+table tbody td button:focus {
+    outline: none;
+}
